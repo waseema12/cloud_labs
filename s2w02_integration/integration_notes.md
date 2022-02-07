@@ -1,5 +1,5 @@
 ---
-title: SNS Integration
+title: PaaS Integration
 ---
 
 Integration
@@ -25,7 +25,7 @@ SQS Endpoints for SNS
 
 SNS is an important integration component along with SQS. We will study
 more advanced architectures later on, but for now: SNS can be used to
-deliver a message to an SQS queue. Consider the scenario shown in .
+deliver a message to an SQS queue.
 
 An SQS queue is subscribed as an endpoint to an SNS topic. There will
 normally be other subscribers: SQS queues and other endpoint types.
@@ -40,13 +40,13 @@ We setup the `lab-topic` and the `lab-queue`:
 $TopicArn=(aws sns create-topic --name lab-topic | ConvertFrom-Json).TopicArn
 
 # Setup SQS queue
-$QueueUrl=(aws sqs create-queue --queue-name lab-topic | ConvertFrom-Json).QueueUrl
+$QueueUrl=(aws sqs create-queue --queue-name lab-queue | ConvertFrom-Json).QueueUrl
 ```
 
 For testing, we may want to add an email (or other) subscription:
 
 ``` {.powershell}
-aws sqs subscribe --topic-arn $TopicARN --protocol email `
+aws sns subscribe --topic-arn $TopicARN --protocol email `
 --notification-endpoint "someone@somewhere.com"
 #        your e-mail goes here ----^
 ```
@@ -59,16 +59,10 @@ as Endpoint.
 
 ``` {.powershell}
 # Get QueueARN for URL
-$QueueArn=(aws sqs get-queue-attributes `
---queue-url $QueueUrl --attribute-names QueueArn
-| ConvertFrom-Json).Attributes.QueueArn
+$QueueArn=(aws sqs get-queue-attributes --queue-url $QueueUrl --attribute-names QueueArn | ConvertFrom-Json).Attributes.QueueArn
 
 # Subscribe the queue to the topic
-aws sns subscribe `
---topic-arn $TopicArn `
---protocol sqs ` 
---notification-endpoint $QueueArn `
---attributes RawMessageDelivery=true 
+aws sns subscribe --topic-arn $TopicArn --protocol sqs --notification-endpoint $QueueArn  --attributes RawMessageDelivery=true 
 ```
 
 The `RawMessageDelivery` attribute means that the message will be passed
@@ -176,12 +170,10 @@ Which this time should appear on the SQS queue:
 
 ``` {.powershell}
 # receive the message
-$ReceivedMessage=(aws sqs receive-message --queue-url $QueueUrl 
-| ConvertFrom-Json).Messages[0]
+$ReceivedMessage=(aws sqs receive-message --queue-url $QueueUrl | ConvertFrom-Json).Messages[0]
 
 # delete the message
-aws sqs delete-message --queue-url $QueueUrl `
---receipt-handle $ReceivedMessage.ReceiptHandle
+aws sqs delete-message --queue-url $QueueUrl --receipt-handle $ReceivedMessage.ReceiptHandle
 ```
 
 S3 as publisher to SNS
