@@ -1,0 +1,28 @@
+digraph G {
+
+	subgraph cluster_client {
+		 label="Client Host (e.g. laptop / desktop)";
+		 SSHClient;
+		 subgraph cluster_keypair {
+		 label="Key pair";
+		 PrivateKey;
+		 ClientPublicKey;
+		 }
+		 KeyGen;
+		 KeyGen -> PrivateKey;
+		 KeyGen -> ClientPublicKey;
+		 
+	}
+
+	subgraph cluster_server {
+		 label="Server host";
+		 SSHServer;
+ 		 ServerPublicKey;
+	}
+
+	SSHClient -> SSHServer [ label="SSH connection" ];
+	ServerPublicKey -> SSHServer [ style=dotted, label="uses" ];
+	PrivateKey -> SSHClient [style=dotted, label="uses"];
+	ClientPublicKey -> ServerPublicKey [style=dashed, label="copied"];
+
+}

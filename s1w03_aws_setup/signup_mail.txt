@@ -1,0 +1,6 @@
+Free AWS accounts needed for this module will be provisioned using AWS academy.
+
+You should receive an invite e-mail to sign up to AWS Academy.
+Please complete the sign-up process before our lab session this week.
+
+(You cannot sign up if you haven't yet registered and have access to Moodle in DkIT.)

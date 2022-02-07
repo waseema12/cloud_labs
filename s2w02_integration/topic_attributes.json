@@ -1,0 +1,12 @@
+{
+  "Attributes": {
+    "Policy": "{\n  \"Version\": \"2008-10-17\",\n  \"Id\": \"__default_policy_ID\",\n  \"Statement\": [\n    {\n      \"Sid\": \"__default_statement_ID\",\n      \"Effect\": \"Allow\",\n      \"Principal\": {\n        \"AWS\": \"*\"\n      },\n      \"Action\": [\n        \"SNS:GetTopicAttributes\",\n        \"SNS:SetTopicAttributes\",\n        \"SNS:AddPermission\",\n        \"SNS:RemovePermission\",\n        \"SNS:DeleteTopic\",\n        \"SNS:Subscribe\",\n        \"SNS:ListSubscriptionsByTopic\",\n        \"SNS:Publish\",\n        \"SNS:Receive\"\n      ],\n      \"Resource\": \"arn:aws:sns:eu-west-1:637116340434:lab-topic\",\n      \"Condition\": {\n        \"StringEquals\": {\n          \"AWS:SourceOwner\": \"637116340434\"\n        }\n      }\n    },\n    {\n      \"Sid\": \"allow-s3-publish-to-sns\",\n      \"Effect\": \"Allow\",\n      \"Principal\": {\n        \"Service\": \"s3.amazonaws.com\"\n      },\n      \"Action\": \"SNS:Publish\",\n      \"Resource\": \"arn:aws:sns:eu-west-1:637116340434:lab-topic\",\n      \"Condition\": {\n        \"ArnEquals\": {\n          \"aws:SourceArn\": \"arn:aws:s3:::notifier-source-2\"\n        }\n      }\n    }\n  ]\n}",
+    "Owner": "637116340434",
+    "SubscriptionsPending": "0",
+    "TopicArn": "arn:aws:sns:eu-west-1:637116340434:lab-topic",
+    "EffectiveDeliveryPolicy": "{\"http\":{\"defaultHealthyRetryPolicy\":{\"minDelayTarget\":20,\"maxDelayTarget\":20,\"numRetries\":3,\"numMaxDelayRetries\":0,\"numNoDelayRetries\":0,\"numMinDelayRetries\":0,\"backoffFunction\":\"linear\"},\"disableSubscriptionOverrides\":false}}",
+    "SubscriptionsConfirmed": "1",
+    "DisplayName": "",
+    "SubscriptionsDeleted": "0"
+  }
+}

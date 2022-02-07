@@ -1,0 +1,52 @@
+=======
+LECTURE
+=======
+
+KEY QUESTION:
+In a data centre environment:
+| We have to plug in connectivity to different
+servers.
+| Also, we have control over what gets plugged into what.
+| The network tends to reflect the physical infrastructure to a
+degree.
+| A geographically distributed system will also use WAN (internet)
+links and/or VPNs, dedicated circuits etc.
+| Often will have largely separate systems under our control.
+How does this happen within the cloud?
+
+VPC is a "Virtual Private Cloud"
+| Actually a software-defined network.
+| Having virtual private clouds is what differentiates the likes of
+Azure and AWS from the virtual server providers.
+| Just like in a DC environment, we could have a cloud network that is
+wholly/partially isolated from the internet at large.
+| Can have multiple VPCs associated with a single AWS account
+(e.g. one per project/customer).
+
+Idea is that you can create your own network across the availability
+zones within a region:
+| The VPC is how infrastructure services are arranged, connected
+together and to the internet and distributed amongst data centres.
+| Numbering scheme etc. 
+| VPC: spans ALL AZs within a region.
+| SUBNET: associated with a single AZ (cannot span more than that)
+
+Each instance has a "Network Interface".
+
+Internet gateway 
+NAT gateway (IPV4)
+Egress only (IPV6)
+
+SECURITY:
+| Security groups: firewall for EC2 instances
+| Network ACL.
+
+Problem as set.
+
+===
+LAB
+===
+
+
+
+

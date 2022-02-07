@@ -1,0 +1,45 @@
+  1  git clone https://github.com/grantp-teaching/ipaas_integration.git
+    2  sudo yum -y install git
+    3  git clone https://github.com/grantp-teaching/ipaas_integration.git
+    4  ls
+    5  cd ip*
+    6  ls 
+    7  cat qprocessor.py
+    8  cat qprocessor.py | more
+    9  git pull --rebase
+   10  python3 qprocessor.py
+   11  yum search boto3
+   12  sudo pip3 install boto3
+   13  python3 qprocessor.py
+   14  cat qprocessor.py
+   15  python3 qprocessor.py
+   16  git pull --rebase
+   17  python3 qprocessor.py
+   18  python3 qprocessor.py https://queue.amazonaws.com/381303118602/labq qmessages.txt
+   19  nano ~/.aws/config
+   20  mkdir .aws
+   21  mkdir ~/.aws
+   22  nano ~/.aws/config
+   23  python3 qprocessor.py https://queue.amazonaws.com/381303118602/labq qmessages.txt
+   24  ls
+   25  cat qmessages.txt
+   26  which python3
+   27  nano qprocessor.service
+   28  sudo cp qprocessor.service /etc/systemd/system/qprocessor.service
+   29  sudo systemctl enable qprocessor
+   30  sudo systemctl start qprocessor
+   31  ps aux 
+   32  ps aux | grep qproc
+   33  journalctl -xe
+   34  git pull
+   35  git stash
+   36  git pull --rebase
+   37  nano qprocessor.service
+   38  sudo cp qprocessor.service /etc/systemd/system/qprocessor.service
+   39  sudo systemctl daemon-reload
+   40  sudo systemctl enable qprocessor
+   41  sudo systemctl start qprocessor
+   42  ps aux | grep qproc
+   43  ls
+   44  cat qmessages.txt
+   45  history

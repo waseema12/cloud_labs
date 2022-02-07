@@ -1,0 +1,51 @@
+digraph G {
+
+rankdir=LR;
+
+Topic [label="SNS Topic"];
+
+subgraph cluster_publishers {
+	 label="Publishers";
+	 Console;
+	 Script;
+	 AWSCLI;
+	 Script -> AWSCLI;
+	 Program;
+	 AWSSDK;
+	 Program -> AWSCLI;
+	 Program -> AWSSDK;
+	 }
+
+Console->Topic;
+AWSCLI->Topic;
+AWSSDK->Topic;
+
+subgraph cluster_endpoints {
+	 label="Endpoints";
+	 subgraph cluster_human {
+	 label="Machine to Human";
+	 SMS;
+	 Email;
+	 }
+	 subgraph cluster_machine {
+	 label="Machine to Machine";
+	 EmailJSON;
+	 HTTP;
+	 HTTPS;
+	 }
+	 subgraph cluster_AWS {
+	 label="AWS services";
+	 Application;	 
+	 SQS;
+	 }
+}
+
+Topic -> Email;
+Topic -> EmailJSON;
+Topic -> HTTP;
+Topic -> HTTPS;
+Topic -> SMS;
+Topic -> Application;
+Topic -> SQS;
+
+}

@@ -1,0 +1,30 @@
+digraph G {
+
+rankdir=LR;
+
+Topic [label="Topic"];
+
+subgraph cluster_publishers {
+	 label="Publishers";
+	 P1;
+	 P2;
+	 P3;
+	 }
+
+P1->Topic [label="M1"];
+P2->Topic;
+P3->Topic;
+
+subgraph cluster_subscribers {
+	 label="Subscribers";
+	 S1;
+	 S2;
+	 S3;
+
+}
+
+Topic->S1 [label="M1"];
+Topic->S2 [label="M1"];
+Topic->S3 [label="M1"];
+
+}

@@ -1,0 +1,25 @@
+digraph G {
+	rankdir=LR;
+	node [fontname="courier"];
+	graph [style="dotted"];
+
+	subgraph cluster_sns {
+		label="SNS";
+		T [label="lab-topic"];
+	}
+	
+	subgraph cluster_sqs {
+	label="SQS";
+	Q1 [label="lab-queue"];
+	}
+
+	T -> Q1;
+
+	subgraph cluster_other_subscribers {
+	label="Other subscribers (if req'd)";
+	E1 [label="someone@somewhere.com"];
+	}
+
+	T -> E1;
+
+}

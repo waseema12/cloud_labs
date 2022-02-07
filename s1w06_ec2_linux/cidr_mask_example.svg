@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: fig2dev Version 3.2 Patchlevel 5c -->
+
+<!-- CreationDate: Fri Jan 21 21:44:04 2011 -->
+
+<!-- Magnification: 1.000 -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="6.9in"
+   height="6.8in"
+   viewBox="-388 2013 8276 8199"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="IP_Address_Match.svg">
+  <metadata
+     id="metadata62">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs60">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 306 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="621 : 306 : 1"
+       inkscape:persp3d-origin="310.5 : 204 : 1"
+       id="perspective64" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="882"
+     inkscape:window-height="821"
+     id="namedview58"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="0.95054765"
+     inkscape:cx="312.60405"
+     inkscape:cy="263.919"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g4" />
+  <g
+     style="stroke-width:.025in; fill:none"
+     id="g4">
+    <!-- Text -->
+    <!-- Text -->
+    <!-- Line -->
+    <!-- Line -->
+    <!-- Line -->
+    <!-- Line: box -->
+    <!-- Line: box -->
+    <!-- Line: box -->
+    <!-- Line: box -->
+    <!-- Line: box -->
+    <!-- Line: box -->
+    <!-- Line -->
+    <!-- Arrowhead on XXXpoint 150 4050 - 6315 4050-->
+    <!-- Line -->
+    <!-- Line -->
+    <!-- Line -->
+    <!-- Line -->
+    <!-- Line -->
+    <!-- Line -->
+    <!-- Text -->
+    <!-- Text -->
+    <!-- Text -->
+    <!-- Text -->
+    <!-- Text -->
+    <!-- Text -->
+    <!-- Text -->
+    <g
+       id="g2847">
+      <text
+         style="font-size:267.94116211px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-anchor:start;fill:#000000;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         id="text6"
+         font-size="216"
+         font-weight="bold"
+         font-style="normal"
+         y="5083.9697"
+         x="316.08826"
+         xml:space="preserve"><tspan
+           id="tspan2882"
+           style="font-size:267.94116211px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">10.10.1.44 matches 10.10.1.32/27</tspan></text>
+      <text
+         style="font-size:267.94116211px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-anchor:start;fill:#000000;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         id="text8"
+         font-size="216"
+         font-weight="bold"
+         font-style="normal"
+         y="8083.9697"
+         x="316.08826"
+         xml:space="preserve"><tspan
+           id="tspan2884"
+           style="font-size:267.94116211px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">but 10.10.1.90 does not !</tspan></text>
+      <polygon
+         transform="translate(-37.5,150)"
+         id="polygon10"
+         style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#7f6f38;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         points="3000,2325 3000,2325 75,3075 7500,3075 4575,2325 " />
+      <polygon
+         transform="translate(-37.5,16.029408)"
+         id="polygon12"
+         style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#7f6f38;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         points="3000,5850 3000,5850 75,6600 7500,6600 4575,5850 " />
+      <polygon
+         transform="translate(-37.5,150)"
+         id="polygon14"
+         style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#7f6f38;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         points="3000,8700 3000,8700 75,9450 7500,9450 4575,8700 " />
+      <rect
+         id="rect16"
+         style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffdf71;stroke:#000000;stroke-width:13.39705849;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         rx="0"
+         height="375"
+         width="1575"
+         y="2175"
+         x="2962.5" />
+      <rect
+         id="rect18"
+         style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffefae;stroke:#000000;stroke-width:13.39705849;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         rx="0"
+         height="450"
+         width="7425"
+         y="3225"
+         x="37.5" />
+      <rect
+         id="rect20"
+         style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffdf71;stroke:#000000;stroke-width:13.39705849;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         rx="0"
+         height="375"
+         width="1575"
+         y="5566.0303"
+         x="2962.5" />
+      <rect
+         id="rect22"
+         style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffefae;stroke:#000000;stroke-width:13.39705849;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         rx="0"
+         height="450"
+         width="7425"
+         y="6616.0303"
+         x="37.5" />
+      <rect
+         id="rect24"
+         style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffdf71;stroke:#000000;stroke-width:13.39705849;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         rx="0"
+         height="375"
+         width="1575"
+         y="8550"
+         x="2962.5" />
+      <rect
+         id="rect26"
+         style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffefae;stroke:#000000;stroke-width:13.39705849;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         rx="0"
+         height="450"
+         width="7425"
+         y="9600"
+         x="37.5" />
+      <polyline
+         transform="matrix(0.94406045,0,0,0.94406045,172.74231,376.55514)"
+         id="polyline28"
+         style="font-size:333.57260132px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;stroke:#000000;stroke-width:28.38178062;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:5;stroke-dasharray:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         points="150,4050 6283,4050 " />
+      <polyline
+         transform="matrix(1,0,0,3.9642171,-186.97873,-11855.079)"
+         id="polyline30"
+         style="font-size:161.48864746px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;stroke:#000000;stroke-width:13.45738697;stroke-miterlimit:5;stroke-dasharray:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         points="6178 4080 6298 4050 6178 4020 " />
+      <polyline
+         transform="matrix(1.3456416,0,0,1.3456416,-2323.025,-937.5271)"
+         id="polyline36"
+         style="font-size:238.94134521px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;stroke:#000000;stroke-width:19.9117794;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:5;stroke-dasharray:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         points="6300,3150 6300,8100 " />
+      <polyline
+         transform="matrix(1.345893,0,0,1.345893,98.17487,-939.563)"
+         id="polyline38"
+         style="font-size:238.89671326px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;stroke:#000000;stroke-width:19.90806007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:5;stroke-dasharray:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         points="150,3150 150,8100 " />
+      <text
+         style="font-size:267.94116211px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-anchor:middle;fill:#000000;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         id="text44"
+         font-size="216"
+         font-weight="bold"
+         font-style="normal"
+         y="4125"
+         x="3206.1074"
+         xml:space="preserve"><tspan
+           id="tspan2886"
+           style="font-size:267.94116211px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">27 bits</tspan></text>
+      <text
+         style="font-size:267.94116211px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-anchor:middle;fill:#000000;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         id="text46"
+         font-size="264"
+         font-weight="bold"
+         font-style="normal"
+         y="2475.196"
+         x="3745.7625"
+         xml:space="preserve"><tspan
+           id="tspan2876"
+           style="font-size:267.94116211px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">10.10.1.32</tspan></text>
+      <text
+         style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-anchor:middle;fill:#000000;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         id="text48"
+         font-size="312"
+         font-weight="bold"
+         font-style="normal"
+         y="3581.4788"
+         x="3751.9958"
+         xml:space="preserve"><tspan
+           id="tspan2870"
+           style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">00001010.00001010.00000001.001<tspan
+   id="tspan3664"
+   style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#808080;fill-opacity:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">00000</tspan></tspan></text>
+      <text
+         style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-anchor:middle;fill:#000000;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         id="text50"
+         font-size="312"
+         font-weight="bold"
+         font-style="normal"
+         y="6972.5088"
+         x="3751.9958"
+         xml:space="preserve"><tspan
+           id="tspan2872"
+           style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">00001010.00001010.00000001.001<tspan
+   id="tspan3666"
+   style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#808080;fill-opacity:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">01100</tspan></tspan></text>
+      <text
+         style="font-size:267.94116211px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-anchor:middle;fill:#000000;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         id="text52"
+         font-size="264"
+         font-weight="bold"
+         font-style="normal"
+         y="5866.2266"
+         x="3744.637"
+         xml:space="preserve"><tspan
+           id="tspan2878"
+           style="font-size:267.94116211px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">10.10.1.44</tspan></text>
+      <text
+         style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-anchor:middle;fill:#000000;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         id="text54"
+         font-size="312"
+         font-weight="bold"
+         font-style="normal"
+         y="9956.4785"
+         x="3751.9958"
+         xml:space="preserve"><tspan
+           id="tspan2874"
+           style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">00001010.00001010.00000001.0<tspan
+   id="tspan3672"
+   style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ff0000;fill-opacity:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">10</tspan><tspan
+   id="tspan3668"
+   style="font-size:321.52941895px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#808080;fill-opacity:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">11010</tspan></tspan></text>
+      <text
+         style="font-size:267.94116211px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-anchor:middle;fill:#000000;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         id="text56"
+         font-size="264"
+         font-weight="bold"
+         font-style="normal"
+         y="8850.0352"
+         x="3745.4409"
+         xml:space="preserve"><tspan
+           id="tspan2880"
+           style="font-size:267.94116211px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">10.10.1.90</tspan></text>
+    </g>
+  </g>
+</svg>

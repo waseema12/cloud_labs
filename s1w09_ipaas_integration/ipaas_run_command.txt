@@ -1,0 +1,5 @@
+aws ec2 run-instances --subnet-id subnet-03aaaafb8baa02139 `
+
+--instance-type t2.nano --key-name vockey --security-group-ids sg-0a7fe6e388727f610  `
+--image-id resolve:ssm:/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2 `
+--iam-instance-profile Name=LabInstanceProfile

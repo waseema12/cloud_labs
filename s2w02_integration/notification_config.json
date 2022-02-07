@@ -1,0 +1,25 @@
+{
+  "TopicConfigurations": [
+    {
+      "Id": "push_s3_to_sns_topic",
+      "TopicArn": "arn:aws:sns:eu-west-1:637116340434:xyz",
+      "Events": [
+        "s3:ObjectCreated:*"
+      ],
+      "Filter": {
+        "Key": {
+          "FilterRules": [
+            {
+              "Name": "Prefix",
+              "Value": ""
+            },
+            {
+              "Name": "Suffix",
+              "Value": ""
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

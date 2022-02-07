@@ -1,0 +1,19 @@
+{
+    "Version": "2008-10-17",
+    "Statement": [
+	{
+	    "Sid": "allow-s3-publish-to-sns",
+	    "Effect": "Allow",
+	    "Principal": {
+		"Service": "s3.amazonaws.com"
+	    },
+	    "Action": "SNS:Publish",
+	    "Resource": "TOPIC ARN GOES HERE",
+	    "Condition": {
+		"ArnEquals": {
+		    "aws:SourceArn": "BUCKET ARN GOES HERE"
+		}
+	    }
+	}
+    ]
+}

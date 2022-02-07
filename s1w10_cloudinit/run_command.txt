@@ -1,0 +1,9 @@
+aws ec2 run-instances `
+--subnet-id $SubnetId `
+--instance-type t2.nano `
+--key-name vockey `
+--security-group-ids $SGId  `
+--image-id resolve:ssm:/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2 `
+--iam-instance-profile Name=LabInstanceProfile
+--user-data file://user_data.sh
+

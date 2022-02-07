@@ -1,0 +1,16 @@
+JSON as structured data format:
+- human readable
+- interoperable (langages)
+
+Structure:
+extension .json
+List & Map
+Root element
+Nesting
+
+Exercise:
+
+Cloud.json
+
+Routes.json
+

@@ -1,0 +1,23 @@
+{
+    "characteristics": [
+	"On-demand self-service",
+	"Broad network access",
+	"Resource pooling",
+	"Metered service"
+    ],
+    "providers": {
+	"aws": {
+	    "name": "Amazon Web Services",
+	    "headquarters": "USA"
+	},
+	"azure": {
+	    "name": "Microsoft Azure",
+	    "headquarters": "USA"
+	},
+	"gcp": {
+	    "name": "Google Cloud Platform",
+	    "headquarters": "USA"
+	}
+    }
+}
+

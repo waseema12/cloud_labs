@@ -1,0 +1,30 @@
+Confirm all have got e-mail from AWS Academy
+
+Direct link to AWS academy learner lab page.
+
+Confirm all can login to AWS academy.
+How to start learner lab. 
+Can everyone get to AWS console? 
+
+Identify IaaS { compute, networking } and PaaS { object storage, queues } we will use.
+
+How to setup AWS CLI locally...
+
+(AWS cmd installed on lab PCs - own PC will need install)
+
+PowerShell execution policy
+
+Config file setup.
+
+Credentials - obtaining and pasting using script.
+
+aws ec2 describe-instances
+should return:
+{
+    "Reservations": []
+}
+
+
+
+CloudShell demo
+

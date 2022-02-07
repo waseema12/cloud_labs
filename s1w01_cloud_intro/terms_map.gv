@@ -1,0 +1,48 @@
+digraph G {
+
+	layout=twopi;
+
+	label="Cloud terms of service (NIST)";
+
+	overlap=true;
+	ranksep=1.5;
+
+	agreement [label="Agreement"];
+
+	promises [label="Promises"];
+	limitations [label="Limitations"];
+	obligations [label="Obligations"];
+
+	agreement -> promises;
+	agreement -> limitations;
+	agreement -> obligations;
+
+	availability [ label="Availability" ];
+	remedies_for_failure_to_perform [ label="Remedies for\nfailure to perform"];
+	data_preservation [ label="Data\npreservation" ];
+	legal_care_of_customer_information [label="Legal care\nof customer\ninformation"];
+	
+	promises -> availability;
+	promises -> remedies_for_failure_to_perform;
+	promises -> data_preservation;
+	promises -> legal_care_of_customer_information;
+
+	scheduled_outages [label="Scheduled\noutages"];
+	force_majeure_events [label="Force\nmajeure\nevents"];
+	service_agreement_changes [label="Service\nagreement\nchanges"];
+	security [label="Security"];
+
+	limitations -> scheduled_outages;
+	limitations -> force_majeure_events;
+	limitations -> service_agreement_changes;
+	limitations -> security;
+
+	acceptable_use_policies [label="Acceptable\nuse\npolicies"];
+	licensed_software [label="Licensed\nsoftware"];
+	timely_payments [label="Timely\npayments"];
+
+	obligations -> acceptable_use_policies;
+	obligations -> licensed_software;
+	obligations -> timely_payments;
+
+}

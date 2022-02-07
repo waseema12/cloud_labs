@@ -1,0 +1,12 @@
+[Unit]
+Description=Q processor service unit file
+
+[Service]
+User=ec2-user
+WorkingDirectory=/home/ec2-user/ipaas_integration
+# must use absolute path in ExecStart:
+ExecStart=/usr/bin/python3 qprocessor.py https://queue/url/here /home/ec2-user/ipaas_integration/qmessages.txt
+
+[Install]
+WantedBy=multi-user.target
+
