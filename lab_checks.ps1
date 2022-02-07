@@ -1,11 +1,12 @@
-﻿# Checks for cloud setup lab
+﻿#!/usr/bin/env pwsh
+# Checks for cloud setup lab
 
 # commands expected
 $commands = @( "git", "aws" )
 foreach ( $command in $commands ) {
     Write-Host "checking for $command command... " -NoNewline
     if ( Get-command $command ) {
-        Write-Host "OK"
+        Write-Host "OK" -ForegroundColor Green
     }
     else {
         Write-Host "not found" -ForegroundColor Red
