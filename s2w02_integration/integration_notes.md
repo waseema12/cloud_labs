@@ -148,7 +148,7 @@ $Attributes = @{ Policy=($Policy | ConvertTo-Json -Depth 99) }
 $Attributes | ConvertTo-Json -Depth 99
 
 # save the attributes
-$Attributes | ConvertTo-Json -Depth 99 |  Out-File queue_attributes.json
+$Attributes | ConvertTo-Json -Depth 99 |  Out-File queue_attributes.json -Encoding ascii
 ```
 
 ### Applying queue attributes
@@ -238,7 +238,7 @@ $Policy = $Attributes.Attributes.Policy | ConvertFrom-Json
 $Policy.Statement += $NewPolicy.Statement[0]
 
 # JSON encode the amended policy and output to file
-$Policy | ConvertTo-Json -Depth 99 | Out-File topic_policy.json
+$Policy | ConvertTo-Json -Depth 99 | Out-File topic_policy.json -Encoding ascii
 ```
 
 ### Applying amended policy
