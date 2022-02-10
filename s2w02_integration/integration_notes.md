@@ -192,11 +192,6 @@ aws s3api create-bucket --bucket $BucketName
 # Generate the bucket ARN (always this pattern)
 $BucketArn = "arn:aws:s3:::$BucketName"
 
-# Topic (if required)
-$TopicArn = ( aws sns create-topic --name lab-topic | ConvertFrom-Json ).TopicArn
-
-# assume we have subscriptions (e.g. topic functions)
-```
 
 Permissions
 -----------
@@ -267,7 +262,7 @@ $NotificationConfig.TopicConfigurations[0].TopicArn=$TopicArn
 # can modify other things as necessary!
 
 # re-write
-$NotificationConfig | ConvertTo-Json -Depth 99 | Out-File notification_config.json
+$NotificationConfig | ConvertTo-Json -Depth 99 | Out-File notification_config.json -Encoding ascii
 
 aws s3api put-bucket-notification-configuration `
 --bucket $BucketName `
