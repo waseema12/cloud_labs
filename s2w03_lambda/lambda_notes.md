@@ -147,7 +147,7 @@ Deployment package creation
 To package the code into a ZIP we can:
 
 ``` {.powershell}
-Compress-Archive -Paths hello_handler.py -DestinationPath hello_code.zip
+Compress-Archive -Path hello_handler.py -DestinationPath hello_code.zip
 
 # issues on Mac/Linux in PowerShell due to file permissions, use instead (in Bash):
 zip hello_code.zip hello_handler.py
@@ -214,7 +214,7 @@ and then:
 
 ``` {.powershell}
 # new ZIP file:
-Compress-Archive -Force -Paths hello_handler.py -DestinationPath hello_code.zip
+Compress-Archive -Force -Path hello_handler.py -DestinationPath hello_code.zip
 
 # update the code on Lambda
 aws lambda update-function-code `
