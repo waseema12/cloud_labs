@@ -4,3 +4,9 @@ nist_cloud_synopsis.pdf
 _minted-*
 auto/
 *.zip
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
