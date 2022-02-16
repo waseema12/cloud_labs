@@ -1,9 +1,9 @@
 def hello_handler(event, context):
-    # "print" statement (redirected to log)
-    print('standard output to log')
-
     
     greeting = "Hello %s %s" % ( event['firstname'], event['surname'])
+
+    # "print" statement (redirected to log)
+    print(greeting)
     
     # return value
     return {
