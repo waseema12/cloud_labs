@@ -7,10 +7,11 @@ def display_event(event, context):
     # "print" statement (redirected to log)
     print('received: %s' % event_as_string)
     
-    # add a comment
-    event['comment'] = 'altered by lambda function'
-    
+    # pull out subject & message
+    subject = event['Records'][0]['Sns']['Subject']
     message = event['Records'][0]['Sns']['Message']
+    
+    # use message (& subject?) if needed
     print('message: %s' % message)
     
     # return value

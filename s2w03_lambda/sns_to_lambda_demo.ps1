@@ -1,5 +1,5 @@
 # Subscribing a lambda function to an SNS topic
-# Peadar Grant
+# Peada Grant                         
 
 # Assume lambda lab setup is done already, if not: 
 ./lambda_lab_setup.ps1
