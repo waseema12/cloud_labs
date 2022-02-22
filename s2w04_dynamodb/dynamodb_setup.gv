@@ -1,0 +1,45 @@
+digraph G {
+
+	rankdir=LR;
+	labelloc="t";
+	label=< <b>SNS topic to Lambda to DynamoDB (w/ SQS)</b> >;
+	
+	subgraph cluster_aws {
+		label="AWS";
+	
+	subgraph cluster_sns {
+		label="SNS";
+		T [ label="dynamotopic" ];
+		}
+	subgraph cluster_sqs {
+		label="SQS";
+	Q [ label="dynamoqueue" ];
+	}
+	
+	subgraph cluster_lambda {
+		label="Lambda";
+		F [ label="log_message" ];
+	}
+	
+	T->Q;
+	T->F;
+
+	subgraph cluster_dynamodb {
+		label="DynamoDB";
+		TBL [ label="message_table" ];
+	}
+	
+	F->TBL;
+
+}
+
+	subgraph cluster_local { 
+		label="Local PC";
+		C [ label="consumer.ps1" ];
+		P [ label="aws publish"];
+	}
+	
+	P->T;
+	C->Q;
+
+}
