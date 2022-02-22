@@ -5,9 +5,9 @@
 # You should work through this file.
 # Confirm that you understand each step before moving on.
 
-$TopicName = 'lecturetopic'
+$TopicName = 'lecture2topic'
 $global:TopicName=$TopicName
-$QueueName = 'lecturequeue'
+$QueueName = 'lecture2queue'
 $global:QueueName=$QueueName
 
 # create the SNS topic, capturing the ARN
@@ -16,7 +16,7 @@ Write-Host "Topic ARN: $TopicArn"
 $global:TopicArn=$TopicArn
 
 # create the SQS queue, capture the Queue URL
-$QueueUrl = (aws sqs create-queue --queue-name lecturequeue | ConvertFrom-Json).QueueUrl
+$QueueUrl = (aws sqs create-queue --queue-name $QueueName | ConvertFrom-Json).QueueUrl
 Write-Host "Queue URL: $QueueUrl"
 $global:QueueUrl=$QueueUrl
 
@@ -69,7 +69,7 @@ $Policy.Statement += $NewPolicy.Statement[0]
 # JSON encode the amended policy and output to file
 $Policy | ConvertTo-Json -Depth 99 | Out-File topic_policy.json -Encoding ascii
 # Apply the amended policy
-aws sns set-topic-attribute --topic-arn $TopicArn --attribute-name Policy --attribute-value file://topic_policy.json
+aws sns set-topic-attributes --topic-arn $TopicArn --attribute-name Policy --attribute-value file://topic_policy.json
 
 # read in the config file and convert to PSobject
 $NotificationConfig = Get-Content notification_config_template.json | ConvertFrom-Json
