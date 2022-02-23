@@ -44,5 +44,11 @@ aws sns subscribe --topic-arn $TopicArn --protocol lambda --notification-endpoin
 # Add permissions
 aws lambda add-permission --function-name $FunctionName --source-arn $TopicArn --action "lambda:InvokeFunction"  --principal sns.amazonaws.com  --statement-id grant-topic-access-to-function
 
+# Send test message
+aws sns publish --topic-arn $TopicArn --subject "Test subject" --message "Test message"
+
+# Scan (i.e. select *) from the table
+aws dynamodb scan --table-name $TableName
+
 # delete table
 # aws dynamodb delete-table --table-name $TableName
