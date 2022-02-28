@@ -1,0 +1,123 @@
+{
+    "Resources": {
+
+	"LABVPC": {
+	    "Type": "AWS::EC2::VPC",
+	    "Properties": {
+		"CidrBlock": "10.0.0.0/16",
+		"Tags": [ { "Key": "Name", "Value": "LAB_VPC" } ]
+	    }
+	},
+	
+	
+	"LABIGW": {
+	    "Type": "AWS::EC2::InternetGateway",
+	    "Properties": {
+		"Tags": [
+		    {
+			"Key": "Name",
+			"Value": "LAB_IGW"
+		    }
+		]
+	    }
+	},
+	"LABIGWAttach": {
+	    "Type": "AWS::EC2::VPCGatewayAttachment",
+	    "Properties": {
+		"InternetGatewayId": { "Ref": "LABIGW" },
+		"VpcId": { "Ref": "LABVPC" }
+	    
+	    }
+	},
+	
+  "LABROUTETABLE": {
+    "Type": "AWS::EC2::RouteTable",
+    "Properties": {
+      "VpcId": { "Ref": "LABVPC"},
+      "Tags": [
+        {"Key": "Name", "Value":"public_routes"}
+        ]
+    }
+  },
+  
+	"LABROUTE" : {
+	    "Type" : "AWS::EC2::Route",
+	    "DependsOn" : "LABIGW",
+	    "Properties" : {
+		"RouteTableId" : { "Ref" : "LABROUTETABLE" },
+		"DestinationCidrBlock" : "0.0.0.0/0",
+		"GatewayId" : { "Ref" : "LABIGW" }
+	    }
+	},
+	
+  "LAB1SN": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+    "AvailabilityZone": "us-east-1a",
+    "CidrBlock": "10.0.1.0/24",
+    "MapPublicIpOnLaunch": true,
+    "VpcId": { "Ref": "LABVPC" },
+    "Tags": [
+        {
+      "Key": "Name",
+      "Value": "LAB_1_SN"
+        }
+    ]
+      }
+  },
+  "LAB2SN": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+    "AvailabilityZone": "us-east-1b",
+    "CidrBlock": "10.0.2.0/24",
+    "MapPublicIpOnLaunch": true,
+    "VpcId": { "Ref": "LABVPC" },
+    "Tags": [
+        {
+      "Key": "Name",
+      "Value": "LAB_2_SN"
+        }
+    ]
+      }
+  },
+  "LAB3SN": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+    "AvailabilityZone": "us-east-1c",
+    "CidrBlock": "10.0.3.0/24",
+    "MapPublicIpOnLaunch": true,
+    "VpcId": { "Ref": "LABVPC" },
+    "Tags": [
+        {
+      "Key": "Name",
+      "Value": "LAB_3_SN"
+        }
+    ]
+      }
+  },
+  
+  "LAB1SNRTA": {
+    "Type": "AWS::EC2::SubnetRouteTableAssociation",
+    "Properties": {
+      "RouteTableId": { "Ref": "LABROUTETABLE" },
+      "SubnetId": {"Ref": "LAB1SN" }
+    }
+  },
+  
+  "LAB2SNRTA": {
+    "Type": "AWS::EC2::SubnetRouteTableAssociation",
+    "Properties": {
+      "RouteTableId": { "Ref": "LABROUTETABLE" },
+      "SubnetId": {"Ref": "LAB2SN" }
+    }
+  },
+
+  "LAB3SNRTA": {
+    "Type": "AWS::EC2::SubnetRouteTableAssociation",
+    "Properties": {
+      "RouteTableId": { "Ref": "LABROUTETABLE" },
+      "SubnetId": {"Ref": "LAB3SN" }
+    }
+  }
+  }
+    }
