@@ -1,14 +1,15 @@
 {
     "Resources" : {
+	
         "MyPublicBucket" : {
             "Type" : "AWS::S3::Bucket",
-	    "Properties" : {
-		"AccessControl": "PublicRead"
-	    }
+			"Properties" : {
+				"AccessControl": "PublicRead"
+			}
         },
-	"MyPrivateBucket" : {
+		
+		"MyPrivateBucket" : {
             "Type" : "AWS::S3::Bucket"
         }
-	
     }
 }
